@@ -16,7 +16,7 @@ $ git clone https://github.com/ekasai6724/turtlebot3_config.git
 
 ```sh
 $ cd ~/turtlebot3_config
-$ sudo cp teleop-launch_linux.py /opt/ros/foxy/share/teleop_twist_joy/launch/
+$ sudo cp teleop_linux-launch.py /opt/ros/foxy/share/teleop_twist_joy/launch/
 $ sudo cp f710.config.yaml /opt/ros/foxy/share/teleop_twist_joy/config/
 ```
 
@@ -37,7 +37,7 @@ $ ros2 launch turtlebot3_bringup robot.launch.py
 
 続いて別ターミナルウィンドウを起動し、以下のコマンドでゲームパッドによる手動操作を開始します。
 ```sh
-$ ros2 launch teleop_twist_joy teleop-launch_linux.py
+$ ros2 launch teleop_twist_joy teleop_linux-launch.py
 ```
 デバイスが`/dev/input/js0`以外で認識されている場合は、起動コマンドに以下のようにパラメータを追加してください。<br>
 (`/dev/input/js2`の場合)
